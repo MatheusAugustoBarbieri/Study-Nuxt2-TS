@@ -1,6 +1,7 @@
 export default {
   methods: {
-    hasInvalidDigits(phone) {
+    // retorna boolean ou array com string ou nulo
+    hasInvalidDigits(phone: string): boolean | string[] | null {
       if (phone) {
         const phoneArray = phone.split('')
         const noAreaCodeArray = phoneArray.splice(2)
@@ -11,7 +12,7 @@ export default {
       return false
     },
 
-    isPhoneValid(phone) {
+    isPhoneValid(phone: string): boolean {
       if (this.hasInvalidDigits(phone)) {
         return false
       }

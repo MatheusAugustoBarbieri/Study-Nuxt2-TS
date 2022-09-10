@@ -25,13 +25,13 @@
 <script lang="ts">
 import Vue from 'vue'
 import { mapState, mapMutations } from 'vuex'
-import device from '@/mixins/device.js'
+import device from '@/mixins/device'
 export default Vue.extend({
   name: 'MenuHeaderComponent',
   mixins: [device],
   data() {
     return {
-      menu_open: false,
+      menu_open: false as boolean,
     }
   },
   computed: {
@@ -43,7 +43,7 @@ export default Vue.extend({
     ...mapMutations({
       openHeaderMenu: 'modals/openHeaderMenu',
     }),
-    navigate() {
+    navigate(): void {
       this.$route.path === '/'
         ? this.scrollTo('contact')
         : window.location.replace('/#contact')

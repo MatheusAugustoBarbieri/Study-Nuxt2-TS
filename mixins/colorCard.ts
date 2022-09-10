@@ -1,6 +1,5 @@
-import Vue from 'vue'
 import { Iproduto, Iprod } from '@/interfaces/Iproduto'
-export default Vue.extend({
+export default {
   methods: {
     bgType(prod: Iproduto) {
       if (prod && prod.types) {
@@ -26,4 +25,4 @@ export default Vue.extend({
       }
     },
   },
-})
+}

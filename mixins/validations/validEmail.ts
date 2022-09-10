@@ -1,6 +1,6 @@
 export default {
   methods: {
-    validateEmail(email) {
+    validateEmail(email: string): boolean | unknown {
       try {
         if (email) {
           // eslint-disable-next-line no-useless-escape
@@ -9,7 +9,7 @@ export default {
           )
         }
         return false
-      } catch (error) {
+      } catch (error: unknown) {
         return error
       }
     },
