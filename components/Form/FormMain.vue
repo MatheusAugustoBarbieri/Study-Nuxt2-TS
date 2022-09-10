@@ -51,7 +51,7 @@ export default Vue.extend({
           this.clearForm()
         } else {
           this.validateAll(
-            name_valid,
+            !!name_valid,
             !!email_valid,
             phone_valid,
             !!subject,

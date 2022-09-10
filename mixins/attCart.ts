@@ -1,5 +1,6 @@
+import Vue from 'vue'
 import { mapActions } from 'vuex'
-export default {
+export default Vue.extend({
   mounted() {
     this.setItemCart()
   },
@@ -8,4 +9,4 @@ export default {
       setItemCart: 'cart/setItemCart',
     }),
   },
-}
+})

@@ -6,12 +6,14 @@
   </div>
 </template>
 
-<script>
-import attCart from '~/mixins/attCart.js'
-export default {
+<script lang="ts">
+import { Context } from '@nuxt/types'
+import Vue from 'vue'
+import attCart from '~/mixins/attCart'
+export default Vue.extend({
   name: 'IndexPage',
   mixins: [attCart],
-  async asyncData({ store }) {
+  async asyncData({ store }: Context) {
     try {
       await store.dispatch('productBanner/setProdBanner')
       await store.dispatch('products/setProducts')
@@ -19,5 +21,5 @@ export default {
       return error
     }
   },
-}
+})
 </script>

@@ -1,6 +1,6 @@
 export default {
   methods: {
-    isNameValid(name) {
+    isNameValid(name: string): boolean | string[] | null | string {
       return (
         name &&
         name.length > 2 &&

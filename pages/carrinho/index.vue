@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import attCart from '~/mixins/attCart.js'
+import attCart from '~/mixins/attCart'
 export default {
   name: 'CarrinhoPage',
   mixins: [attCart],
