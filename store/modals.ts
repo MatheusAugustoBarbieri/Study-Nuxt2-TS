@@ -1,9 +1,11 @@
-export const state = () => ({
-  menu_header_open: false as boolean,
+import { State, Enumutations, Mutations } from './modals-type'
+
+export const state = (): State => ({
+  menu_header_open: false,
 })
 
-export const mutations = {
-  openHeaderMenu(state: any, payload: boolean) {
+export const mutations: Mutations = {
+  [Enumutations.OPEN_HEADER_MENU](state, payload) {
     state.menu_header_open =
       payload === undefined ? !state.menu_header_open : payload
   },
