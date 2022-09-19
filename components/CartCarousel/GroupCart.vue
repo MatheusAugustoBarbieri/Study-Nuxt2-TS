@@ -16,7 +16,7 @@
         v-if="cart_product && cart_product.length"
         class="group-cart__box-button container"
       >
-        <button class="group-cart__button" @click="clearAll()">
+        <button class="group-cart__button" @click="CLEAR_ALL()">
           Concluir compra
         </button>
       </div>
@@ -27,6 +27,7 @@
 <script lang="ts">
 import Vue from 'vue'
 import { mapState, mapActions } from 'vuex'
+import { EnumActionsCart } from '~/store/cart/cart.type'
 export default Vue.extend({
   name: 'GroupCart',
   computed: {
@@ -36,7 +37,7 @@ export default Vue.extend({
   },
   methods: {
     ...mapActions({
-      clearAll: 'cart/clearAll',
+      CLEAR_ALL: `cart/${EnumActionsCart.CLEAR_ALL}`,
     }),
   },
 })

@@ -1,5 +1,4 @@
-import Vue from 'vue'
-export default Vue.extend({
+export default {
   data() {
     return {
       device_width: 0 as number,
@@ -19,4 +18,4 @@ export default Vue.extend({
       }
     },
   },
-})
+}

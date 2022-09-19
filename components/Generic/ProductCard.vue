@@ -4,7 +4,7 @@
     class="banner-product"
     :style="`border-color: ${bordercolor}`"
   >
-    <div class="banner-product__featured" v-if="featured">
+    <div v-if="featured" class="banner-product__featured">
       <p>Melhor oferta.</p>
       <div class="banner-product__featured-custom"></div>
     </div>

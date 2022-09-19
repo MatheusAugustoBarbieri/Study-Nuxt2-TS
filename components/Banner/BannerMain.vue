@@ -4,7 +4,7 @@
       <div class="banner__box">
         <h1 class="banner__title">Garanta agora seu novo pokémon!</h1>
         <ProductCard :prod="prodBanner" :featured="true" />
-        <button class="banner__button" @click="setItemCart(prodBanner)">
+        <button class="banner__button" @click="SET_ITEM_CART(prodBanner)">
           Compre agora
         </button>
       </div>
@@ -15,6 +15,7 @@
 <script lang="ts">
 import Vue from 'vue'
 import { mapGetters, mapActions } from 'vuex'
+import { EnumActionsCart } from '~/store/cart/cart.type'
 export default Vue.extend({
   name: 'BannerMainComponent',
   computed: {
@@ -24,7 +25,7 @@ export default Vue.extend({
   },
   methods: {
     ...mapActions({
-      setItemCart: 'cart/setItemCart',
+      SET_ITEM_CART: `cart/${EnumActionsCart.SET_ITEM_CART}`,
     }),
   },
 })

@@ -18,10 +18,6 @@ export const mutations: Mutations = {
 }
 
 export const actions: Actions = {
-  $axios(): { data: any } | PromiseLike<{ data: any }> {
-    throw new Error('Function not implemented.')
-  },
-
   async [enumActions.SET_PROD_BANNER]({ commit }) {
     try {
       const { data } = await this.$axios('/pokemon/1')
