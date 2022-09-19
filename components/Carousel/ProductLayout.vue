@@ -3,7 +3,7 @@
     <ProductCard :prod="prod" />
     <button
       class="product__button product__button--comprar"
-      @click="setItemCart(prod)"
+      @click="SET_ITEM_CART(prod)"
     >
       Comprar
     </button>
@@ -17,6 +17,7 @@
 import Vue from 'vue'
 import { mapActions } from 'vuex'
 import colorCard from '@/mixins/colorCard'
+import { EnumActionsCart } from '~/store/cart/cart.type'
 export default Vue.extend({
   name: 'ProductslayoutComponent',
   mixins: [colorCard],
@@ -28,7 +29,7 @@ export default Vue.extend({
   },
   methods: {
     ...mapActions({
-      setItemCart: 'cart/setItemCart',
+      SET_ITEM_CART: `cart/${EnumActionsCart.SET_ITEM_CART}`,
     }),
   },
 })

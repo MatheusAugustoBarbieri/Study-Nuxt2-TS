@@ -25,7 +25,7 @@
 <script lang="ts">
 import Vue from 'vue'
 import { mapState, mapMutations } from 'vuex'
-import { Enumutations } from '@/store/modals-type'
+import { Enumutations } from '~/store/modals/modals-type'
 import device from '@/mixins/device'
 export default Vue.extend({
   name: 'MenuHeaderComponent',

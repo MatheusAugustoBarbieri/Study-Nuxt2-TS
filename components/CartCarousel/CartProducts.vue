@@ -1,6 +1,7 @@
 <script>
 import { mapActions } from 'vuex'
 import colorCard from '@/mixins/colorCard'
+import { EnumActionsCart } from '~/store/cart/cart.type'
 export default {
   name: 'ProductslayoutComponent',
   mixins: [colorCard],
@@ -12,7 +13,7 @@ export default {
   },
   methods: {
     ...mapActions({
-      removeItemCart: 'cart/removeItemCart',
+      REMOVE_ITEM_CART: `cart/${EnumActionsCart.REMOVE_ITEM_CART}`,
     }),
   },
 }
@@ -29,7 +30,7 @@ export default {
       >
         {{ prod.name }}
       </div>
-      <button class="product__button-remove" @click="removeItemCart(prod)">
+      <button class="product__button-remove" @click="REMOVE_ITEM_CART(prod)">
         Remover
       </button>
     </div>

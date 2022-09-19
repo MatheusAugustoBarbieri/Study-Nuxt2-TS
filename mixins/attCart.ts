@@ -1,12 +1,12 @@
-import Vue from 'vue'
 import { mapActions } from 'vuex'
-export default Vue.extend({
+import { EnumActionsCart } from '~/store/cart/cart.type'
+export default {
   mounted() {
-    this.setItemCart()
+    this.SET_ITEM_CART()
   },
   methods: {
     ...mapActions({
-      setItemCart: 'cart/setItemCart',
+      SET_ITEM_CART: `cart/${EnumActionsCart.SET_ITEM_CART}`,
     }),
   },
-})
+}

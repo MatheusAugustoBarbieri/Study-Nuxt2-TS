@@ -1,5 +1,4 @@
-import Vue from 'vue'
-export default Vue.extend({
+export default {
   data() {
     return {
       swiperOption: {
@@ -51,4 +50,4 @@ export default Vue.extend({
       },
     }
   },
-})
+}

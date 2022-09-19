@@ -15,7 +15,6 @@ export enum enumActions {
   SET_PROD_BANNER = 'SET_PROD_BANNER',
 }
 export interface Actions {
-  $axios(arg0: string): { data: any } | PromiseLike<{ data: any }>
   [enumMutations.SET_PROD_BANNER](context: { commit: Commit }): void | unknown
 }
 
