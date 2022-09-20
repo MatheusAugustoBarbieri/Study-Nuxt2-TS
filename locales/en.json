@@ -1,0 +1,20 @@
+{
+  "header": ["Home", "Sobre", "Fale conosco"],
+  "banner": [
+    "Garanta agora seu novo pokémon!",
+    "Melhor oferta.",
+    "Compre agora"
+  ],
+  "carousel": ["Pokémons disponíveis para você.", "Comprar", "Fale conosco"],
+  "form": [
+    "Entre em contato:",
+    "Insira seu nome",
+    "Seu e-mail",
+    "Seu telefone",
+    "O assunto",
+    "Deixe sua mensagem",
+    "Enviar"
+  ],
+  "footer": ["© 2022 - Lorem Ipsum - Direitos Reservados."],
+  "about": ["Site fake usado para estudos de tecnologias e padrões de projeto."]
+}

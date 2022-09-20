@@ -5,11 +5,11 @@
       class="product__button product__button--comprar"
       @click="SET_ITEM_CART(prod)"
     >
-      Comprar
+      {{ $t('carousel[1]') }}
     </button>
-    <a href="#contact" class="product__button product__button--falar"
-      >Fale Conosco</a
-    >
+    <a href="#contact" class="product__button product__button--falar">{{
+      $t('carousel[2]')
+    }}</a>
   </div>
 </template>
 

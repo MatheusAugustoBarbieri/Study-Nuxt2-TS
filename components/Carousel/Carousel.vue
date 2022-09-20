@@ -1,7 +1,7 @@
 <template>
   <div v-if="products" class="carousel">
     <div class="container">
-      <div class="carousel__title">Pokémons disponíveis para você.</div>
+      <div class="carousel__title">{{ $t('carousel[0]') }}</div>
       <client-only>
         <swiper v-if="products" class="swiper" :options="swiperOption">
           <swiper-slide v-for="(item, index) in products" :key="index">
