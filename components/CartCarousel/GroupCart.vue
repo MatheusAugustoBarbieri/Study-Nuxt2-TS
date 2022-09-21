@@ -17,7 +17,7 @@
         class="group-cart__box-button container"
       >
         <button class="group-cart__button" @click="CLEAR_ALL()">
-          Concluir compra
+          {{ $t('groupCart[0]') }}
         </button>
       </div>
     </client-only>

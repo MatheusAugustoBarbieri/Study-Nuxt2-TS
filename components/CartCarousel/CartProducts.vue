@@ -31,11 +31,12 @@ export default {
         {{ prod.name }}
       </div>
       <button class="product__button-remove" @click="REMOVE_ITEM_CART(prod)">
-        Remover
+        {{ $t('cartProduct[0]') }}
       </button>
     </div>
   </div>
 </template>
+
 <style lang="scss" scoped>
 .product {
   width: 250px;

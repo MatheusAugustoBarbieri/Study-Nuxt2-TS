@@ -1,7 +1,7 @@
 <template>
   <div class="about">
     <div class="container">
-      Site fake usado para estudos de tecnologias e padrões de projeto.
+      {{ $t('about[0]') }}
     </div>
   </div>
 </template>

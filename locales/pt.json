@@ -9,12 +9,20 @@
   "form": [
     "Entre em contato:",
     "Insira seu nome",
+    "Nome inválido",
     "Seu e-mail",
+    "E-mail inválido",
     "Seu telefone",
+    "Telefone inválido",
     "O assunto",
+    "Assunto inválido",
     "Deixe sua mensagem",
+    "Mensagem inválida",
     "Enviar"
   ],
+  "itensNull": ["Nenhum pokémon adicionado", "Ver Pokémons"],
+  "groupCart": ["Concluir compra"],
+  "cartProduct": ["Remover"],
   "footer": ["© 2022 - Lorem Ipsum - Direitos Reservados."],
   "about": ["Site fake usado para estudos de tecnologias e padrões de projeto."]
 }

@@ -1,5 +1,5 @@
 <template>
-  <button class="form-button">Enviar</button>
+  <button class="form-button">{{ $t('form[11]') }}</button>
 </template>
 
 <script lang="ts">

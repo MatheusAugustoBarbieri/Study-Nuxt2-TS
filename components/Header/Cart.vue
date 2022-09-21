@@ -1,11 +1,11 @@
 <template>
-  <a href="/carrinho" class="cart">
+  <nuxt-link :to="localePath('/carrinho')" class="cart">
     <client-only>
       <div v-if="cart_product" class="cart__count">
         {{ cart_product.length }}
       </div>
     </client-only>
-  </a>
+  </nuxt-link>
 </template>
 
 <script lang="ts">

@@ -1,7 +1,7 @@
 <template>
   <div class="header-main">
     <div class="container header-main__box">
-      <a href="/" class="header-main__logo" />
+      <nuxt-link :to="localePath('/')" class="header-main__logo" />
       <div class="header-main__box-two">
         <LanguageBox />
         <Cart />

@@ -15,9 +15,9 @@
         <label
           :style="!$parent.form_valid.full_name ? 'color: red;' : ''"
           for="name"
-          >Insira seu nome</label
+          >{{ $t('form[1]') }}</label
         >
-        <span v-if="!$parent.form_valid.full_name">Nome inválido</span>
+        <span v-if="!$parent.form_valid.full_name">{{ $t('form[2]') }}</span>
       </div>
 
       <div class="form-input__box-input">
@@ -31,9 +31,9 @@
         <label
           :style="!$parent.form_valid.email ? 'color: red;' : ''"
           for="email"
-          >Seu e-mail</label
+          >{{ $t('form[3]') }}</label
         >
-        <span v-if="!$parent.form_valid.email">Nome inválido</span>
+        <span v-if="!$parent.form_valid.email">{{ $t('form[4]') }}</span>
       </div>
 
       <div class="form-input__box-input">
@@ -51,9 +51,9 @@
         <label
           :style="!$parent.form_valid.phone_number ? 'color: red;' : ''"
           for="phone"
-          >Seu telefone</label
+          >{{ $t('form[5]') }}</label
         >
-        <span v-if="!$parent.form_valid.phone_number">Telefone inválido</span>
+        <span v-if="!$parent.form_valid.phone_number">{{ $t('form[6]') }}</span>
       </div>
 
       <div class="form-input__box-input">
@@ -69,9 +69,9 @@
         <label
           :style="!$parent.form_valid.subject ? 'color: red;' : ''"
           for="assunto"
-          >O assunto</label
+          >{{ $t('form[7]') }}</label
         >
-        <span v-if="!$parent.form_valid.subject">Assunto inválido</span>
+        <span v-if="!$parent.form_valid.subject">{{ $t('form[8]') }}</span>
       </div>
     </div>
     <div class="form-input__box-input">
@@ -84,12 +84,14 @@
         class="form-input__text-area"
         :class="!$parent.form_valid.message ? 'form-input__invalid-input' : ''"
       ></textarea>
-      <label :style="!$parent.form_valid.message ? 'color: red;' : ''" for="msg"
-        >Deixe sua mensagem</label
+      <label
+        :style="!$parent.form_valid.message ? 'color: red;' : ''"
+        for="msg"
+        >{{ $t('form[9]') }}</label
       >
-      <span v-if="!$parent.form_valid.message" style="bottom: -10px"
-        >Mensagem inválida</span
-      >
+      <span v-if="!$parent.form_valid.message" style="bottom: -10px">{{
+        $t('form[10]')
+      }}</span>
     </div>
   </div>
 </template>

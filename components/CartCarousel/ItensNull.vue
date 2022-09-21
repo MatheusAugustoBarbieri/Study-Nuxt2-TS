@@ -1,7 +1,7 @@
 <template>
   <div class="itens-null">
-    <div class="itens-null__text">Nenhum pokémon adicionado</div>
-    <a href="/" class="itens-null__button">Ver Pokémons</a>
+    <div class="itens-null__text">{{ $t('itensNull[0]') }}</div>
+    <a href="/" class="itens-null__button">{{ $t('itensNull[1]') }}</a>
   </div>
 </template>
 

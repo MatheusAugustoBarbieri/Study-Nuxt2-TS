@@ -38,7 +38,9 @@ export const actions: ActionsCart = {
       commit(EnumMutationsCart.SET_ITEM_CART, x)
       if (item) {
         localStorage.setItem('itens', JSON.stringify(x))
-        this.$router.push({ path: '/carrinho' })
+        this.$router.push({
+          path: this.localePath({ path: `/carrinho` }),
+        })
       }
     } catch (error) {
       return error

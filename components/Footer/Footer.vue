@@ -3,7 +3,7 @@
     <div class="container">
       <a href="/" class="footer__logo" />
       <div class="footer__copy">
-        © {{ year }} - Lorem Ipsum - Direitos Reservados.
+        {{ $t('footer[0]') }}
       </div>
     </div>
   </div>
