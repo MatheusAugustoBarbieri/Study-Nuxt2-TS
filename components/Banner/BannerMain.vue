@@ -2,10 +2,10 @@
   <div class="banner">
     <div class="container">
       <div class="banner__box">
-        <h1 class="banner__title">Garanta agora seu novo pokémon!</h1>
+        <h1 class="banner__title">{{ $t('banner[0]') }}</h1>
         <ProductCard :prod="prodBanner" :featured="true" />
         <button class="banner__button" @click="SET_ITEM_CART(prodBanner)">
-          Compre agora
+          {{ $t('banner[2]') }}
         </button>
       </div>
     </div>

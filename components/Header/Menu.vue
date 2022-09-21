@@ -13,9 +13,15 @@
     <transition name="animation-menu">
       <div v-if="menu_header_open || device_width > 768" class="menu__links">
         <div class="menu__link-container">
-          <NuxtLink class="menu__link" to="/">Home</NuxtLink>
-          <NuxtLink class="menu__link" to="/about">Sobre</NuxtLink>
-          <div class="menu__link" @click="navigate()">Fale conosco</div>
+          <NuxtLink class="menu__link" :to="localePath('/')">{{
+            $t('header[0]')
+          }}</NuxtLink>
+          <NuxtLink class="menu__link" :to="localePath('/about')">{{
+            $t('header[1]')
+          }}</NuxtLink>
+          <div class="menu__link" @click="navigate()">
+            {{ $t('header[2]') }}
+          </div>
         </div>
       </div>
     </transition>
@@ -47,7 +53,7 @@ export default Vue.extend({
     navigate(): void {
       this.$route.path === '/'
         ? this.scrollTo('contact')
-        : window.location.replace('/#contact')
+        : window.location.replace(this.localePath({ path: `/#contact` }))
     },
     scrollTo(elementId: string): void {
       const scrollTip = document.querySelector(`#${elementId}`) as HTMLElement

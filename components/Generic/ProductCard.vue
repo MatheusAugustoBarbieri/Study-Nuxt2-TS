@@ -5,7 +5,7 @@
     :style="`border-color: ${bordercolor}`"
   >
     <div v-if="featured" class="banner-product__featured">
-      <p>Melhor oferta.</p>
+      <p>{{ $t('banner[1]') }}</p>
       <div class="banner-product__featured-custom"></div>
     </div>
     <img

@@ -1,7 +1,7 @@
 <template>
   <form id="contact" class="form" @submit.prevent="submitForm()">
     <div class="container">
-      <h2 class="form__title">Entre em contato:</h2>
+      <h2 class="form__title">{{ $t('form[0]') }}</h2>
       <FormInput />
       <FormButton />
     </div>

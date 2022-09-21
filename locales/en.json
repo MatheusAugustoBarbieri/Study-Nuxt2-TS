@@ -1,0 +1,26 @@
+{
+  "header": ["Home", "About", "Contact us"],
+  "banner": ["Get your new pokemon now!", "Best offer.", "Buy now"],
+  "carousel": ["Pokemons available to you.", "Purchase", "Contact us"],
+  "form": [
+    "Contact:",
+    "Enter your name",
+    "Invalid name",
+    "Your email",
+    "Invalid email",
+    "Your telephone",
+    "Invalid phone",
+    "The subject",
+    "Invalid subject",
+    "Leave your message",
+    "Invalid message",
+    "Submit"
+  ],
+  "itensNull": ["No pokemon added", "See pokemons"],
+  "groupCart": ["Complete purchase"],
+  "cartProduct": ["To remove"],
+  "footer": ["© 2022 - Lorem Ipsum - Rights Reserved."],
+  "about": [
+    "Fake website used for studies of technologies and design patterns."
+  ]
+}

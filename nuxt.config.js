@@ -52,7 +52,36 @@ export default {
     'nuxt-purgecss',
   ],
 
-  modules: ['@nuxtjs/axios', '@nuxtjs/pwa', 'nuxt-webfontloader'],
+  modules: [
+    '@nuxtjs/axios',
+    '@nuxtjs/pwa',
+    'nuxt-webfontloader',
+    '@nuxtjs/i18n',
+  ],
+
+  i18n: {
+    locales: [
+      {
+        code: 'en',
+        file: 'en.json',
+      },
+      {
+        code: 'pt',
+        file: 'pt.json',
+      },
+    ],
+    defaultLocale: 'pt',
+    langDir: 'locales/',
+    alwaysRedirect: false,
+    fallbackLocale: '',
+    redirectOn: 'root',
+    useCookie: true,
+    cookieAge: 365,
+    cookieCrossOrigin: false,
+    cookieDomain: null,
+    cookieKey: 'i18n_redirected',
+    cookieSecure: false,
+  },
 
   axios: {
     baseURL: process.env.API,

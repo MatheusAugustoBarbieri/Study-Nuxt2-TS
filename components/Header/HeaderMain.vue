@@ -1,8 +1,9 @@
 <template>
   <div class="header-main">
     <div class="container header-main__box">
-      <a href="/" class="header-main__logo" />
+      <nuxt-link :to="localePath('/')" class="header-main__logo" />
       <div class="header-main__box-two">
+        <LanguageBox />
         <Cart />
         <Menu />
       </div>
@@ -45,7 +46,7 @@ export default Vue.extend({
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 80px;
+    width: 160px;
   }
 }
 @media (min-width: 1024px) {
